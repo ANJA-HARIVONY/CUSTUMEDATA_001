@@ -1,71 +1,84 @@
-# Welcome to Reflex!
+I'll help you create a presentation of the project. Let me analyze the codebase first to understand its structure and features.
 
-This is the base Reflex template - installed when you run `reflex init`.
 
-If you want to use a different template, pass the `--template` flag to `reflex init`.
-For example, if you want a more basic starting point, you can run:
 
-```bash
-reflex init --template blank
+Ran tool
+Let me check the README to get more information about the project.
+
+
+Read file: README.md
+Based on the codebase analysis, I can provide you with a comprehensive presentation of the project:
+
+# Presentación del Proyecto CUSTUMERDATA_001
+
+## 1. Descripción General
+Este es un proyecto web desarrollado utilizando el framework Reflex, que es una herramienta moderna para crear aplicaciones web en Python. El proyecto está estructurado de manera modular y sigue las mejores prácticas de desarrollo.
+
+## 2. Arquitectura del Proyecto
+El proyecto está organizado en una estructura clara y modular:
+
+```
+├── assets/                 # Recursos estáticos
+├── CUSTUMERDATA_001/      # Directorio principal de la aplicación
+│   ├── components/        # Componentes reutilizables
+│   ├── pages/            # Páginas de la aplicación
+│   ├── styles.py         # Estilos globales
+│   └── templates/        # Plantillas comunes
+├── alembic/              # Configuración de base de datos
+└── requirements.txt      # Dependencias del proyecto
 ```
 
-## About this Template
+## 3. Características Principales
 
-This template has the following directory structure:
+### 3.1 Sistema de Temas
+- Implementa un sistema de temas personalizable
+- Permite cambiar colores de acento
+- Soporte para diferentes tamaños de radio y escalado
 
-```bash
-├── README.md
-├── assets
-├── rxconfig.py
-└── {your_app}
-    ├── __init__.py
-    ├── components
-    │   ├── __init__.py
-    │   ├── navbar.py
-    │   └── sidebar.py
-    ├── pages
-    │   ├── __init__.py
-    │   ├── about.py
-    │   ├── dashboard.py
-    │   └── settings.py
-    ├── styles.py
-    ├── templates
-    │   ├── __init__.py
-    │   └── template.py
-    └── {your_app}.py
-```
+### 3.2 Componentes Principales
+- **Navbar**: Barra de navegación superior
+- **Sidebar**: Menú lateral
+- **Template System**: Sistema de plantillas reutilizable
 
-See the [Project Structure docs](https://reflex.dev/docs/getting-started/project-structure/) for more information on general Reflex project structure.
+### 3.3 Características Técnicas
+- Diseño responsive
+- Sistema de rutas flexible
+- Gestión de estado con Reflex
+- Soporte para meta tags y SEO
+- Integración con base de datos (alembic)
 
-### Adding Pages
+## 4. Tecnologías Utilizadas
+- **Reflex**: Framework principal
+- **Python**: Lenguaje de programación base
+- **Alembic**: Para migraciones de base de datos
+- **CSS**: Para estilos personalizados
 
-In this template, the pages in your app are defined in `{your_app}/pages/`.
-Each page is a function that returns a Reflex component.
-For example, to edit this page you can modify `{your_app}/pages/index.py`.
-See the [pages docs](https://reflex.dev/docs/pages/routes/) for more information on pages.
+## 5. Estructura de Páginas
+El proyecto utiliza un sistema de plantillas que permite:
+- Definir rutas personalizadas
+- Establecer títulos y descripciones
+- Agregar meta tags
+- Incluir scripts personalizados
+- Manejar eventos de carga
 
-In this template, instead of using `rx.add_page` or the `@rx.page` decorator,
-we use the `@template` decorator from `{your_app}/templates/template.py`.
+## 6. Personalización
+El proyecto permite personalizar:
+- Colores de acento
+- Colores de grises
+- Radio de bordes
+- Escalado de la interfaz
 
-To add a new page:
+## 7. Desarrollo y Mantenimiento
+- Código organizado y modular
+- Fácil adición de nuevas páginas
+- Sistema de componentes reutilizables
+- Documentación integrada
 
-1. Add a new file in `{your_app}/pages/`. We recommend using one file per page, but you can also group pages in a single file.
-2. Add a new function with the `@template` decorator, which takes the same arguments as `@rx.page`.
-3. Import the page in your `{your_app}/pages/__init__.py` file and it will automatically be added to the app.
-4. Order the pages in `{your_app}/components/sidebar.py` and `{your_app}/components/navbar.py`.
+## 8. Próximos Pasos
+Para continuar el desarrollo, se puede:
+1. Agregar nuevas páginas en el directorio `pages/`
+2. Crear componentes reutilizables en `components/`
+3. Personalizar estilos en `styles.py`
+4. Implementar nuevas funcionalidades manteniendo la estructura modular
 
-
-### Adding Components
-
-In order to keep your code organized, we recommend putting components that are
-used across multiple pages in the `{your_app}/components/` directory.
-
-In this template, we have a sidebar component in `{your_app}/components/sidebar.py`.
-
-### Adding State
-
-As your app grows, we recommend using [substates](https://reflex.dev/docs/substates/overview/)
-to organize your state.
-
-You can either define substates in their own files, or if the state is
-specific to a page, you can define it in the page file itself.
+Este proyecto proporciona una base sólida para el desarrollo de aplicaciones web modernas con Reflex, ofreciendo una estructura clara y extensible para futuras mejoras y funcionalidades.
