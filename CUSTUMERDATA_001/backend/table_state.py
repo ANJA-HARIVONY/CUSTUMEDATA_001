@@ -1,18 +1,8 @@
 import csv
 from pathlib import Path
 from typing import List
-
 import reflex as rx
-
-
-class Item(rx.Base):
-    """The item class."""
-
-    pipeline: str
-    status: str
-    workflow: str
-    timestamp: str
-    duration: str
+from ..models.Items_model import Item
 
 
 class TableState(rx.State):
