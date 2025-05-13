@@ -7,12 +7,12 @@ from ..templates import template
 from ..views.incidencias_table_view import main_table
 
 
-@template(route="/incidencia", title="Incidencia", on_load=IncidenciasState.load_entries)
-def dashboard() -> rx.Component:
-    """The dashboard page.
+@template(route="/incidencias", title="Incidencias", on_load=IncidenciasState.load_entries)
+def incidencias() -> rx.Component:
+    """The incidencias page.
 
     Returns:
-        The UI for the dashboard page.
+        The UI for the Incidencias page.
 
     """
     return rx.vstack(

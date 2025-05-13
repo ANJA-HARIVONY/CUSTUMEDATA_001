@@ -30,9 +30,10 @@ def menu_item(text: str, url: str) -> rx.Component:
             rx.match(
                 text,
                 ("Dashboard", menu_item_icon("layout-dashboard")),
+                ("Incidencias", menu_item_icon("album")),
                 ("About", menu_item_icon("book-open")),
                 ("Settings", menu_item_icon("settings")),
-                menu_item_icon("layout-dashboard"),
+                menu_item_icon("layout-list"),
             ),
             rx.text(text, size="4", weight="regular"),
             color=rx.cond(
@@ -107,7 +108,7 @@ def menu_button() -> rx.Component:
     # The ordered page routes.
     ordered_page_routes = [
         "/",
-        "/incidenicas",
+        "/incidencias",
         "/about",
         "/settings",
     ]

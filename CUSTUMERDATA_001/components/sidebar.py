@@ -80,10 +80,10 @@ def sidebar_item(text: str, url: str) -> rx.Component:
             rx.match(
                 text,
                 ("Dashboard", sidebar_item_icon("layout-dashboard")),
-                ("Incidenicas", sidebar_item_icon("layout-dashboard")),
+                ("Incidencias", sidebar_item_icon("layout-list")),
                 ("About", sidebar_item_icon("book-open")),
                 ("Settings", sidebar_item_icon("settings")),
-                sidebar_item_icon("layout-dashboard"),
+                sidebar_item_icon("layout-list"),
             ),
             rx.text(text, size="3", weight="regular"),
             color=rx.cond(
