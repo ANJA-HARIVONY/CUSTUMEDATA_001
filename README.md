@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 I'll help you create a presentation of the project. Let me analyze the codebase first to understand its structure and features.
 
 
@@ -82,3 +83,7 @@ Para continuar el desarrollo, se puede:
 4. Implementar nuevas funcionalidades manteniendo la estructura modular
 
 Este proyecto proporciona una base sólida para el desarrollo de aplicaciones web modernas con Reflex, ofreciendo una estructura clara y extensible para futuras mejoras y funcionalidades.
+=======
+# CUSTUMEDATA_001
+Este es un proyecto web desarrollado utilizando el framework Reflex, que es una herramienta moderna para crear aplicaciones web en Python. El proyecto está estructurado de manera modular y sigue las mejores prácticas de desarrollo.
+>>>>>>> CUSTUMERDATA_001/main
